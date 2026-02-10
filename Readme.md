@@ -32,3 +32,25 @@ This tool allows you to compress files into `.gz` format and decompress them bac
 ```text
 script.js
 README.md
+```
+## How to Use the Project
+### For Compressing
+node script.js compress <inputFile> [outputFile]
+#### Example: node script.js compress example.txt
+This creates: example.txt.gz
+### For Decompressing
+node script.js decompress <inputFile> [outputFile]
+#### Example: node script.js decompress example.txt.gz
+This restores example.txt
+### Custom output:
+node script.js decompress example.txt.gz restored.txt
+### Example Output:
+```
+Compressing
+Progress: 100.00%
+Compression completed!
+Original size: 12.30 MB
+Compressed Size: 4.10 MB
+Saved: 66.67%
+Time: 1.03s
+```
